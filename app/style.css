@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,11 +6,83 @@
 
 body {
     margin: 0;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(10, 50, 100);
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+a {
+    color: #fff;
+}
+
+h1 {
+    line-height: 1.4;
+}
+
+.btn {
+    border: 0;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-family: inherit;
+    background-color: #fff;
+    color: rgb(10, 50, 100);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.screen {
+    width: 100vw;
     height: 100vh;
     display: flex;
-    overflow: hidden;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+}
+.screen.up {
+    margin-top: -200vh;
+}
+
+.insects-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.insects-list li {
+    margin: 10px;
+}
+
+.choose-insect-btn {
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    font-family: inherit;
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+
+.choose-insect-btn:hover {
+    background-color: #fff;
+    color: rgb(10, 50, 100);
+}
+
+.choose-insect-btn:active {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.choose-insect-btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
